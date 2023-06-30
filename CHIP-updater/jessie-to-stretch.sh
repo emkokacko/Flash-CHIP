@@ -53,9 +53,9 @@ sudo ./PocketDesk/PocketDESK.sh
 # Upgrade from jessie to stretch 
 echo "."
 echo "*** Upgrading Debian Jessie to Debian Stretch ***"
-sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak2
+sudo mv /etc/apt/source.list /etc/apt/source.list.bak2
 wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/stretch_source_list.txt
-mv stretch_source_list.txt /etc/apt/sources.list
+mv stretch_source_list.txt /etc/apt/source.list
 
 echo "."
 echo "*** apt update & upgrade ***"
