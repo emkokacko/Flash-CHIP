@@ -5,9 +5,9 @@ mv /etc/rc.local.orig /etc/rc.local
 # Upgrade jessie
 echo "."
 echo "*** Updating and upgrading Debian Jessie. ***"
-mv /etc/apt/source.list /etc/apt/source.list.bak
+mv /etc/apt/sources.list /etc/apt/sources.list.bak
 wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/jessie_source_list.txt
-mv jessie_source_list.txt /etc/apt/source.list
+mv jessie_source_list.txt /etc/apt/sources.list
 
 echo "."
 echo "*** Installing debian keyring. ***"
@@ -53,9 +53,9 @@ sudo ./PocketDesk/PocketDESK.sh
 # Upgrade from jessie to stretch 
 echo "."
 echo "*** Upgrading Debian Jessie to Debian Stretch ***"
-sudo mv /etc/apt/source.list /etc/apt/source.list.bak2
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak2
 wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/stretch_source_list.txt
-mv stretch_source_list.txt /etc/apt/source.list
+mv stretch_source_list.txt /etc/apt/sources.list
 
 echo "."
 echo "*** apt update & upgrade ***"
