@@ -7,7 +7,7 @@ This guide and scripts are based on the excelent work made by https://github.com
 2. Connect the FEL and a GROUND pin of the C.H.I.P. (for example, with a paperclip).
 3. Connect the C.H.I.P. its micro USB port to a USB port of your Linux machine. Make sure that the port and cable allow for plenty of power. If you get a FEL error, it may be because the C.H.I.P. is running under-voltage.
 4. On the Linux machine:
-    - run ` git clone https://github.com/asophila/Flash-CHIP.git` to clone this repository
+    - run ` git clone https://github.com/emkokacko/Flash-CHIP.git` to clone this repository
     - `cd` into the location where you stored this repository
     - run `sudo chmod +x Flash.sh`
     - run `./Flash.sh`
