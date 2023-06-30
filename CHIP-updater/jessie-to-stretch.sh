@@ -5,9 +5,9 @@ mv /etc/rc.local.orig /etc/rc.local
 # Upgrade jessie
 echo "."
 echo "*** Updating and upgrading Debian Jessie. ***"
-mv /etc/apt/sources.list /etc/apt/sources.list.bak
+mv /etc/apt/source.list /etc/apt/source.list.bak
 wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/jessie_source_list.txt
-mv jessie_source_list.txt /etc/apt/sources.list
+mv jessie_source_list.txt /etc/apt/source.list
 
 echo "."
 echo "*** Installing debian keyring. ***"
