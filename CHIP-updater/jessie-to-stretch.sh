@@ -6,7 +6,7 @@ mv /etc/rc.local.orig /etc/rc.local
 echo "."
 echo "*** Updating and upgrading Debian Jessie. ***"
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
-wget https://raw.githubusercontent.com/asophila/Flash-CHIP/master/CHIP-updater/jessie_source_list.txt
+wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/jessie_source_list.txt
 mv jessie_source_list.txt /etc/apt/sources.list
 
 echo "."
@@ -54,7 +54,7 @@ sudo ./PocketDesk/PocketDESK.sh
 echo "."
 echo "*** Upgrading Debian Jessie to Debian Stretch ***"
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak2
-wget https://raw.githubusercontent.com/asophila/Flash-CHIP/master/CHIP-updater/stretch_source_list.txt
+wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/stretch_source_list.txt
 mv stretch_source_list.txt /etc/apt/sources.list
 
 echo "."
@@ -74,10 +74,10 @@ echo -e "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.co
 
 # Define X11 variables for stretch
 sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.bak
-wget https://raw.githubusercontent.com/asophila/Flash-CHIP/master/CHIP-updater/stretch_x11.txt
+wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/stretch_x11.txt
 mv stretch_x11.txt /etc/X11/xorg.conf
 
-wget https://raw.githubusercontent.com/asophila/Flash-CHIP/master/CHIP-updater/stretch-to-buster.sh
+wget https://raw.githubusercontent.com/emkokacko/Flash-CHIP/master/CHIP-updater/stretch-to-buster.sh
 chmod +x stretch-to-buster.sh
 mv stretch-to-buster.sh /home/chip/
 echo "."
